@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+#wrapper{
+    margin-left: 2.5%;
+    width: 95%;
+    border-radius: 5%;
+    background-color: rgb(80, 232, 255);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgba(24, 161, 163, 3); */
+    background: linear-gradient(90deg, #218bef 0%, #1619d4);
+    color: white;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* position: absolute; */
+}
+.imagenLogo{
+    /* position: relative; */
+    /* margin: 0px 0px 0px 800px; */
+    max-width: 15%;
+}
+h1{
+    font-weight: 700;
+    border: dashed 20px #000;
+    padding: 30px;
+    margin: 40px;
+}
+section{
+    width: 100%;
+    display: flex;
+      flex-direction: row;
+    justify-content: center;
+}
+.parrafos{
+    display: grid;
+    grid-template-areas: "A B"
+                         "C D" ;
+    *Sirve para acomodar las imagenes*/                     
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 200px;*/
+}
+/* Sirver para hacer una matriz y acomodar información*/
+.item1{
+    grid-area: A;
+    animation: logo 20s infinite;
+    position: relative;
+}
+.item2{
+    grid-area: B;
+    animation: logo2 8s infinite;
+    position: relative;
+}
+.item3{
+    grid-area: C;
+}    
+@keyframes logo {
+    from {top: 0px;}
+    to {top: 200px}
+}
+@keyframes logo2 {
+    from {left: 0px}
+    to {left: 500px}    
+}
