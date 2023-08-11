@@ -1,0 +1,12 @@
+/*Medología SMACSS*/
+header h1{
+    background-color: blueviolet;
+
+}
+footer h1{
+    background-color: yellow;
+
+}
+footer h1 p{
+    background-color: aqua;
+}
